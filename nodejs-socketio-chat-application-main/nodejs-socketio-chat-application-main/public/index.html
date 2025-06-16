@@ -24,26 +24,25 @@
   <button id="toggleDarkMode" class="btn btn-outline-dark">🌙 Dark Mode</button>
   </nav>
  
-  <form id="nicknameForm" class="form-signin">
-    <h1 class="h3 mb-3 font-weight-normal">
-      Please enter your username
-    </h1>
-    <label for="nicknameInput" class="sr-only">Username</label>
-    <input type="text" name="nickname" id="nicknameInput" class="form-control" placeholder="Username" required autofocus />
-    <!-- Chat Room Selection -->
-    <label class="mt-2" for="chatrooms">Choose a Chat Room</label>
-    <br />
-    <select name="chatrooms" id="chatrooms">
-      <optgroup>
+  <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="p-4 rounded shadow-lg bg-glass text-start" style="width: 100%; max-width: 400px;">
+    <form id="nicknameForm">
+      <h2 class="mb-4 fw-bold text-primary-emphasis">Please enter your username</h2>
+
+      <label for="nicknameInput" class="form-label text-info">Username</label>
+      <input type="text" name="nickname" id="nicknameInput" class="form-control mb-3" placeholder="Username" required autofocus />
+
+      <label for="chatrooms" class="form-label text-info">Choose a Chat Room</label>
+      <select name="chatrooms" id="chatrooms" class="form-select">
         <option value="room1">Chat Room 1</option>
         <option value="room2">Chat Room 2</option>
-        <option value="room3">Chat Room 3</option>
-      </optgroup>
-    </select>
-    <button class="mt-3 btn-lg btn-primary btn-block" type="submit">
-      Enter Chat
-    </button>
-  </form>
+      </select>
+
+      <button class="btn btn-primary mt-4 w-100" type="submit">Enter Chat</button>
+    </form>
+  </div>
+</div>
+
     <button id="backToTopBtn" class="btn btn-secondary" style="position:fixed;bottom:20px;right:20px;display:none;">
     ↑ Top
 </button>
