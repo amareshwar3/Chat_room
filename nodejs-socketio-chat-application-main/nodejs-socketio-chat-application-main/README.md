@@ -29,6 +29,10 @@ To run the chat system locally, follow these steps:
 3. Start the server: `npm start`
 4. Access the chat system in your web browser: `http://localhost:3000`
 
+## 🔗 Live Demo
+
+👉 [Click here to visit the Chat Room](https://chat-room-637f.onrender.com/)
+
 ## Contributions
 
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
