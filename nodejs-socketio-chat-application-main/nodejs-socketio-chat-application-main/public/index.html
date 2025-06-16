@@ -6,12 +6,20 @@
     <meta name="description" content="Simple real-time chat room using Node.js and Socket.IO">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Room</title>
+    <style>
+    .dark-mode {
+        background-color: #121212 !important;
+        color: #f0f0f0 !important;
+    }
+    </style>
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
 <body class="ltr text-center">
+    <button id="toggleDarkMode" class="btn btn-outline-dark m-2">🌙 Toggle Dark Mode</button>
   <form id="nicknameForm" class="form-signin">
     <h1 class="h3 mb-3 font-weight-normal">
       Please enter your username
@@ -35,6 +43,13 @@
     <button id="backToTopBtn" class="btn btn-secondary" style="position:fixed;bottom:20px;right:20px;display:none;">
     ↑ Top
 </button>
+
+  <script>
+    document.getElementById('toggleDarkMode').onclick = function () {
+        document.body.classList.toggle('dark-mode');
+    };
+  </script>
+ 
 
   <script>
     const nicknameForm = document.getElementById("nicknameForm");
